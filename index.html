@@ -54,7 +54,7 @@
  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
  </div>
-      <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+      <h2  class="text-sm font-bold">K. Accessories</h2>
       <h1>Price:<span id="frDive" >39.00</span></h1>
     </div>
     
@@ -74,7 +74,7 @@
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      </div>
-          <h2 id="h2"class="text-sm font-bold">K. Accessories</h2>
+          <h2   class="text-sm font-bold">Home Cooker</h2>
           <h1>Price:<span id="frDive" >39.00</span></h1>
         </div>
         
@@ -94,8 +94,8 @@
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      </div>
-          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
-          <h1>Price:<span id="frDive" >39.00</span></h1>
+          <h2  class="text-sm font-bold">Sports Back Cap</h2>
+          <h1>Price:<span id="frDive" >108.00</span>Tk</h1>
         </div>
         
     </div>
@@ -123,8 +123,8 @@
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      </div>
-          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
-          <h1>Price:<span id="frDive" >39.00</span></h1>
+          <h2 class="text-sm font-bold">Home Cooker</h2>
+          <h1>Price:<span id="frDive" >136.00</span>Tk</h1>
         </div>
         
     </div>
@@ -143,8 +143,8 @@
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      </div>
-          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
-          <h1>Price:<span id="frDive" >39.00</span></h1>
+          <h2 id='pink' class="text-sm font-bold">Full Jersy Set</h2>
+          <h1>Price:<span id="frDive" >256.00</span>Tk</h1>
         </div>
         
     </div>
@@ -163,8 +163,8 @@
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
      </div>
-          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
-          <h1>Price:<span id="frDive" >39.00</span></h1>
+          <h2 id='pink' class="">Sports Cates</h2>
+          <h1>Price:<span id="frDive" >512.00</span>Tk</h1>
         </div>
         
     </div>
@@ -185,7 +185,7 @@
     <div>
         <h1 class="mb-2">Have Coupon?</h1>
         <input type="text" id="cupon" class="border-slate-600 border-2">
-        <button id="coupn-btn"  class="bg-pink-600 text-white text-sm py-1 px-3 rounded-md mt-3 lg:mt-0 md:mt-0" disabled>Apply</button>
+        <button id="coupn-btn"  class="bg-pink-600 text-white text-sm py-1 px-3 rounded-md  ml-0" disabled>Apply</button>
        </div> 
 
        <div id="naitemme" class="bg-slate-200 mt-5">
@@ -243,12 +243,12 @@
 
 // adding and showing name section---------------
     const set=document.getElementById('naitemme')
-   const name=document.getElementById('h2')
-   const nameShow=name.innerText
+   const nameSet=target.parentNode.childNodes[3].childNodes[5].innerText
+   console.log(nameSet)
+  
    const p=document.createElement('p')
-
-   p.innerText= nameShow
-    p.style.fontWeight='bold'
+   p.innerText= nameSet
+    // p.style.fontWeight='bold'
    p.style.fontSize='20px'
    set.appendChild(p)
 
