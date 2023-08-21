@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body{
+    font-family: 'Open Sans', sans-serif;
+  }
+</style>
+<body>
+ <header class="h-[500px] max-w-screen-xl mx-auto">
+    <div class="flex flex-col-reverse lg:flex-row  justify-center  ">
+      <div class=" text-center mt-10  lg:mt-28 ">
+          <h1 class="mb-5">---SALE FEVER---</h1>
+          <h1 class="text-2xl lg:text-5xl font-semibold mb-5">Purchase TK 200 or<br>
+             above &  <span class="text-rose-800 mb-3">20% off</span></h1>
+          <h1>Use Promo Code  <span class="bg-rose-700 text-white lg:p-2 rounded-md ">SELL200</span></h1>
+      </div>
+      <div class="text-center ">
+        <img src="/images/Summer 1.png" class="mt-5 ml-16  md:ml-56 h-[300px] lg:h-[400px]">
+      </div>
+    </div>
+ </header>
+ <main class=" max-w-screen-xl mx-auto">
+<div class="divContainer  grid grid-rows-2 lg:grid-cols-2 ">
+<div class="kitchenContainer  mt-28">
+<div class="firstRowContainer ml-3  md:ml-14">
+<h1 class="font-bold">Kitchenware</h1>
+<div class="grid grid-cols-3 mt-5">
+ <!-- 1sr card -->
+ <div  class="card w-32 h-56 lg:w-40 lg:h-64 bg-base-100 shadow-xl md:w-40 md:h-56 ">
+    <figure id="parina" onclick="firastCard(this)" class="px-10 pt-10">
+      <img src="/images/prod1.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+         <!-- xs -->
+   <div class="rating rating-xs">
+  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+  <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+ <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+ <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+ <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+ </div>
+      <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+      <h1>Price:<span id="frDive" >39.00</span></h1>
+    </div>
+    
+</div>
+    <!-- 1st card end -->
+     <!-- 2nd card -->
+     <div  class="card w-32 h-56  lg:w-40 bg-base-100 shadow-xl lg:h-64 md:w-40 md:h-56 ">
+        <figure id="parina"  onclick="firastCard(this)" class="px-10 pt-10">
+          <img src="/images/prod2.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+             <!-- xs -->
+       <div class="rating rating-xs">
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     </div>
+          <h2 id="h2"class="text-sm font-bold">K. Accessories</h2>
+          <h1>Price:<span id="frDive" >39.00</span></h1>
+        </div>
+        
+    </div>
+        <!-- 2nd st card end -->
+         <!--3rd card -->
+    <div  class="card w-32 h-56 lg:w-40 bg-base-100 shadow-xl lg:h-64  md:w-40 md:h-56 ">
+        <figure id="parina"  onclick="firastCard(this)" class="px-10 pt-10">
+          <img src="/images/prod3.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+             <!-- xs -->
+       <div class="rating rating-xs">
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     </div>
+          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+          <h1>Price:<span id="frDive" >39.00</span></h1>
+        </div>
+        
+    </div>
+        <!-- 3rd card end -->
+</div>
+<!-- first row end -->
+</div>
+<!-- first roe container end -->
+<!-- second roe container start -->
+<div class="secondRowContainer mt-10 ml-3 md:ml-16">
+    <h1 class='font-bold'>Sportswear</h1>
+    <!-- second row start -->
+    <div class="secondRow grid grid-cols-3 mt-3 ">
+         <!-- 1sr card -->
+    <div  class="card w-32 h-56 lg:w-40  md:w-40 md:h-56 bg-base-100 shadow-xl lg:h-64">
+        <figure id="parina" onclick="firastCard(this)" class="px-10 pt-10">
+          <img src="/images/prod4.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+             <!-- xs -->
+       <div class="rating rating-xs">
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     </div>
+          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+          <h1>Price:<span id="frDive" >39.00</span></h1>
+        </div>
+        
+    </div>
+        <!-- 1st card end -->
+         <!-- 2nd card -->
+    <div  class="card w-32 h-56 lg:w-40 md:w-40 md:h-56  bg-base-100 shadow-xl lg:h-64">
+        <figure id="parina" onclick="firastCard(this)" class="px-10 pt-10">
+          <img src="/images/prod5.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+             <!-- xs -->
+       <div class="rating rating-xs">
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     </div>
+          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+          <h1>Price:<span id="frDive" >39.00</span></h1>
+        </div>
+        
+    </div>
+        <!-- 2nd card end -->
+         <!-- 3rd card -->
+    <div  class="card w-32 h-56 lg:w-40 bg-base-100 shadow-xl lg:h-64 md:w-40 md:h-56 ">
+        <figure id="parina"  onclick="firastCard(this)" class="px-10 pt-10">
+          <img src="/images/prod6.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+             <!-- xs -->
+       <div class="rating rating-xs">
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+      <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" checked />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     <input type="radio" name="rating-5" class="mask mask-star-2 bg-orange-400" />
+     </div>
+          <h2 id="h2" class="text-sm font-bold">K. Accessories</h2>
+          <h1>Price:<span id="frDive" >39.00</span></h1>
+        </div>
+        
+    </div>
+        <!--3rd card end -->
+    </div>
+    <!-- second row end -->
+
+</div>
+<!-- second row container end -->
+</div>
+<!-- kitchenContainer end -->
+
+
+
+<!-- second dive container -->
+<div class="mt-14 ml-16 md:ml-60 lg:ml-16 lg:mt-28">
+   <div class=' w-[300px]'>
+    <div>
+        <h1 class="mb-2">Have Coupon?</h1>
+        <input type="text" id="cupon" class="border-slate-600 border-2">
+        <button id="coupn-btn"  class="bg-pink-600 text-white text-sm py-1 px-3 rounded-md mt-3 lg:mt-0 md:mt-0" disabled>Apply</button>
+       </div> 
+
+       <div id="naitemme" class="bg-slate-200 mt-5">
+       </div>
+       <hr>
+       <div class="bg-slate-100">
+        <h1 class="mt-5">Total Price: <span id="total">00</span> Tk</h1>
+        <h1 class="">We are offering 20% discount</h1>
+        <h1>Discount: <span id="discount">00</span> Tk</h1>
+        <h1 class="mb-5">Total: <span id="after-discountTotal">00</span> Tk</h1>
+       </div>
+       <hr>
+     
+<!-- Open the modal using ID.showModal() method -->
+<button id="moda-btn"  class="btn w-full bg-pink-700 text-white hover:bg-orange-400 mt-5" onclick="my_modal_5.showModal()"   disabled>Make Purches</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+<form method="dialog" class="modal-box">
+<div class="ml-40">
+  <img src="./images/congo.png">
+<h3 class="font-bold text-lg">Congratuations!</h3>
+<p class="py-4">Your Purches is Done</p>
+</div>
+<div class="modal-action ">
+  <!-- if there is a button in form, it will close the modal -->
+  <button id='closeBtn'class="btn bg-pink-600">Close</button>
+</div>
+</form>
+</dialog>
+
+
+   </div>
+    </div>
+<!-- second dive container end -->
+    
+</div>
+ </main>
+
+
+
+
+
+
+
+
+<script>
+   
+ function firastCard(target){
+    const showName=parseFloat(target.parentNode.childNodes[3].childNodes[7].childNodes[1].innerText)
+    const price=document.getElementById('total')
+    const currentPrice=parseFloat(price.innerText)
+    // total price
+    const totalPrice=currentPrice+showName
+    document.getElementById('total').innerText=totalPrice
+    
+
+// adding and showing name section---------------
+    const set=document.getElementById('naitemme')
+   const name=document.getElementById('h2')
+   const nameShow=name.innerText
+   const p=document.createElement('p')
+
+   p.innerText= nameShow
+    p.style.fontWeight='bold'
+   p.style.fontSize='20px'
+   set.appendChild(p)
+
+   const modalBtn=document.getElementById('moda-btn')
+ if( totalPrice>0){
+  modalBtn.removeAttribute('disabled')
+}
+else{
+  modalBtn.setAttribute('modalBtn')
+}
+}
+
+// cupon  onclick function start
+document.getElementById('cupon').addEventListener('keyup',function(event){
+ const text=event.target.value 
+ const str='SELL200'
+ const btn=document.getElementById('coupn-btn')
+ console.log(text)
+ if(text===str){
+  btn.disabled=false
+ }
+ else{
+  btn.disabled=true;
+ }
+ 
+})
+
+
+document.getElementById('coupn-btn').addEventListener('click',function(){
+  const totalPrice=document.getElementById('total').innerText
+   console.log(totalPrice)
+  // discount 
+  const disPrice=document.getElementById('discount');
+    const currentDisPrice=parseFloat(disPrice.innerText)
+    // total previous discount price
+    const totalDiscount=currentDisPrice+totalPrice
+    // after discount total price
+    const discountPrice=((20/totalDiscount)*100).toFixed(2)
+    document.getElementById('discount').innerText=discountPrice
+    // after discount total price
+    const afterTotal=(totalPrice-discountPrice)
+    
+    document.getElementById('after-discountTotal').innerText= afterTotal 
+
+  const copnBtnValueRemove=document.getElementById('cupon')
+  copnBtnValueRemove.value=''
+})
+
+document.getElementById('closeBtn').addEventListener('click',function(){
+  const nameDive=document.getElementById('naitemme')
+  const totalPrice=document.getElementById('total')
+  const disCount=document.getElementById('discount')
+  const afterDiscount=document.getElementById('after-discountTotal')
+
+  nameDive.innerHTML='';
+  totalPrice.innerText='00';
+  disCount.innerText='00';
+  afterDiscount.innerText='00';
+})
+
+  
+ 
+
+</script>
+</body>
+</html>
+
